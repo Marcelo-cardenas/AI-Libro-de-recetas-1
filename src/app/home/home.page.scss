@@ -1,0 +1,75 @@
+ion-header {
+  ion-toolbar {
+    ion-icon {
+      font-size: 22px;
+      padding-right: 15px;
+    }
+  }
+}
+
+ion-content {
+  --background: #f9f9f9; /* Color de fondo de la página */
+}
+
+/* Estilo para el encabezado */
+ion-toolbar {
+  --background: #b4f321; /* Color de fondo del encabezado */
+  --color: #ca6410; /* Color del texto del encabezado */
+  --ion-toolbar-ios-height: 44px; /* Altura del encabezado en iOS */
+  --ion-toolbar-md-height: 56px; /* Altura del encabezado en Android */
+}
+
+/* Estilo para el título en el encabezado */
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Estilo para el botón de salida */
+ion-icon[name="exit-outline"] {
+  font-size: 24px;
+}
+
+/* Estilo para el menú seleccionable */
+ion-list {
+  ion-item-divider {
+    font-weight: bold;
+    padding: 16px;
+    color: #0a0909;
+  }
+
+  ion-item {
+    --padding-start: 16px; /* Espaciado izquierdo del elemento */
+    --padding-end: 16px; /* Espaciado derecho del elemento */
+    --inner-padding-end: 16px; /* Espaciado derecho del contenido del elemento */
+    font-size: 18px;
+    color: #0e0d0d;
+    ion-label {
+      text-transform: capitalize; /* Primera letra en mayúscula */
+    }
+  }
+
+  /* Estilo para el elemento seleccionado */
+  ion-item.selected {
+    background-color: #E0E0E0;
+    color: #000000;
+  }
+}
+ion-item-divider {
+  --background: #def321; /* Establecer el color de fondo azul (#2196F3) */
+  --color: rgb(17, 4, 4); /* Establecer el color del texto en blanco */
+  --ion-font-family: cursive; /* Establecer la fuente de letra en cursiva */
+  padding: 8px 16px; /* Añadir espacio de relleno alrededor del título */
+}
+
+/* Estilos para el texto dentro del ion-item */
+ion-item ion-label {
+  color: #07208d; /* Establecer el color del texto en rosa (#FF4081) */
+  font-style: italic; /* Establecer la fuente de letra en cursiva */
+}
+#main-content ion-img.fullscreen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

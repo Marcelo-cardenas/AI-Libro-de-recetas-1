@@ -1,0 +1,168 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>postres veganos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-content class="ion-padding">
+    <h1 class="recipe-title">  Brownies Veganos</h1>
+    <ion-img src="https://delantaldealces.com/wp-content/uploads/2014/05/brownies-veganos.jpg" class="recipe-image"></ion-img>
+    
+    <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+    <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+  
+    <ion-card *ngIf="showRecipe" id="recipe-card">
+      <ion-card-content>
+        <h2>Receta</h2>
+        <!-- Texto de la receta -->
+        <ul>
+          <li>1 taza de harina de trigo integral</li>
+          <li> 1/2 taza de cacao en polvo sin azúcar</li>
+          <li> 1 taza de azúcar de coco o endulzante de tu elección</li>
+          <li>1/2 cucharadita de polvo de hornear</li>
+          <li>  1/4 cucharadita de sal</li>
+          <li>1/2 taza de puré de manzana sin azúcar</li>
+          <li>1/2 taza de leche vegetal</li>
+          <li> 1 cucharadita de extracto de vainilla</li>
+          <li> 1/2 taza de nueces picadas (opcional)</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card *ngIf="showPreparation" id="preparation-card">
+      <ion-card-content>
+        <h2>Preparación</h2>
+        <!-- Texto de la preparación -->
+        <ol>
+          <li>Precalienta el horno a 180°C.</li>
+          <li>En un tazón grande, mezcla la harina, el cacao, el azúcar, el polvo de hornear y la sal.</li>
+          <li>Agrega el puré de manzana, la leche vegetal, el aceite de coco y el extracto de vainilla. Mezcla hasta que todo esté combinado.</li>
+          <li>Agrega las nueces picadas si lo deseas.</li>
+          <li>Vierte la mezcla en un molde para hornear previamente engrasado.</li>
+          <li>Hornea durante unos 25-30 minutos, o hasta que un palillo insertado en el centro salga limpio.</li>
+          <li>Deja enfriar antes de cortar en porciones y servir.</li>
+        </ol>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
+  
+  <ion-content class="ion-padding">
+    <h1 class="recipe-title"> Elado de platano y cacao</h1>
+    <ion-img src="https://i.ytimg.com/vi/evAiNfcMWYE/maxresdefault.jpg" class="recipe-image"></ion-img>
+    
+    <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+    <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+  
+    <ion-card *ngIf="showRecipe" id="recipe-card">
+      <ion-card-content>
+        <h2>Receta</h2>
+        <!-- Texto de la receta -->
+        <ul>
+          <li>Bananas maduras congeladas</li>
+          <li>2 cucharadas de cacao en polvo sin azúcar</li>
+          <li>Toppings opcionales: nueces picadas, trozos de chocolate vegano, coco rallado</li>    
+        </ul>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card *ngIf="showPreparation" id="preparation-card">
+      <ion-card-content>
+        <h2>Preparación</h2>
+        <!-- Texto de la preparación -->
+        <ol>
+          <li>Corta las bananas congeladas en trozos.</li>
+          <li>Coloca las bananas y el cacao en una procesadora de alimentos o licuadora potente.</li>
+          <li>Mezcla hasta que la mezcla tenga la consistencia de un helado cremoso.</li>
+          <li>Sirve inmediatamente, añadiendo los toppings de tu elección.</li>
+        </ol>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
+  
+  
+  <ion-content class="ion-padding">
+    <h1 class="recipe-title"> Cheesecake Vegano de Frutos Rojos</h1>
+    <ion-img src="https://b2580788.smushcdn.com/2580788/wp-content/uploads/2020/07/cheescakevegano_2-683x1024.jpg?lossy=0&strip=1&webp=1" class="recipe-image"></ion-img>
+    
+    <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+    <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+  
+    <ion-card *ngIf="showRecipe" id="recipe-card">
+      <ion-card-content>
+        <h2>Receta</h2>
+        <!-- Texto de la receta -->
+        <ul>
+          <li>1 1/2 tazas de nueces</li>
+          <li>1 taza de dátiles</li>
+          <li>2 tazas de anacardos remojados (sin sal) durante al menos 2 horas</li>
+          <li>1/2 taza de jugo de limón</li>
+          <li>1/2 taza de jarabe de arce o agave</li>
+          <li>1/2 taza de aceite de coco derretido</li>
+          <li>1 cucharadita de extracto de vainilla</li>
+          <li>Frutos rojos frescos para decorar</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card *ngIf="showPreparation" id="preparation-card">
+      <ion-card-content>
+        <h2>Preparación</h2>
+        <!-- Texto de la preparación -->
+        <ol>
+          <li>En un procesador de alimentos, mezcla las nueces y los dátiles hasta obtener una mezcla pegajosa.</li>
+          <li>Presiona la mezcla en el fondo de un molde para tarta.</li>
+          <li>Enjuaga los anacardos remojados y colócalos en una licuadora junto con el jugo de limón, el jarabe de arce, el aceite de coco y el extracto de vainilla. Mezcla hasta obtener una mezcla suave y cremosa.</li>
+          <li>Vierte la mezcla sobre la base de nueces y dátiles en el molde.</li>
+          <li>Refrigera durante al menos 4 horas, o hasta que esté firme.</li>
+          <li>Decora con frutos rojos frescos antes de servir.</li>
+        </ol>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
+  
+  
+  
+  <ion-content class="ion-padding">
+    <h1 class="recipe-title"> Galletas de Avena y Pasas:</h1>
+    <ion-img src="https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2019/02/12115044/RFB-0102-2-galletasdeavenaypasas.jpg" class="recipe-image"></ion-img>
+    
+    <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+    <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+  
+    <ion-card *ngIf="showRecipe" id="recipe-card">
+      <ion-card-content>
+        <h2>Receta</h2>
+        <!-- Texto de la receta -->
+        <ul>
+          <li>1 1/2 tazas de avena</li>
+          <li>1/2 taza de harina de avena</li>
+          <li>1/2 taza de pasas</li>
+          <li>1/4 taza de jarabe de arce</li>
+          <li>1/4 taza de aceite de coco derretido</li>
+          <li>1 cucharadita de extracto de vainilla</li>
+          <li>1/2 cucharadita de canela</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card *ngIf="showPreparation" id="preparation-card">
+      <ion-card-content>
+        <h2>Preparación</h2>
+        <!-- Texto de la preparación -->
+        <ol>
+          <li>Precalienta el horno a 180°C y forra una bandeja para hornear con papel pergamino.</li>
+          <li>En un tazón, mezcla la avena, la harina de avena y las pasas.</li>
+          <li>Agrega el jarabe de arce, el aceite de coco, el extracto de vainilla y la canela. Mezcla hasta que los ingredientes estén bien combinados.</li>
+          <li>Con tus manos, forma pequeñas bolitas con la masa y colócalas en la bandeja para hornear. Luego, aplasta ligeramente cada bolita para formar galletas.</li>
+          <li>Hornea durante aproximadamente 10-12 minutos, o hasta que estén doradas en los bordes.</li>
+          <li>Deja enfriar antes de disfrutar.</li>
+        </ol>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>

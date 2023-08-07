@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Mostrar cada evento con su imagen y botón "Más info" -->
+  <ion-card *ngFor="let evento of eventos">
+    <ion-card-content>
+      <!-- Establece una clase CSS para las imágenes -->
+      <ion-img class="evento-imagen" [src]="evento.imagen" alt="Descripción de la imagen"></ion-img>
+      <ion-button expand="full" color="primary" (click)="abrirPaginaWeb(evento.paginaWeb)">
+        Más info
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

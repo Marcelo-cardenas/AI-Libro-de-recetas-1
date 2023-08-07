@@ -1,0 +1,25 @@
+$color-camaleon: #6b8e23;
+$color-camaleon-oscuro: #4b6923;
+
+.vista-camaleon {
+  background-color: $color-camaleon;
+
+  ion-title {
+    color: white;
+  }
+
+  .contenido {
+    padding: 20px;
+    color: white;
+
+    .boton {
+      background-color: $color-camaleon-oscuro;
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: darken($color-camaleon-oscuro, 10%);
+      }
+    }
+  }
+}

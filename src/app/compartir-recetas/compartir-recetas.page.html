@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Compartir Recetas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <input type="file" accept="image/*" (change)="onImageSelected($event)">
+  </ion-item>
+
+  <ion-item *ngIf="selectedImage">
+    <img [src]="selectedImage" alt="Imagen seleccionada">
+  </ion-item>
+
+  <ion-button expand="full" (click)="uploadImage()">Subir Imagen</ion-button>
+</ion-content>

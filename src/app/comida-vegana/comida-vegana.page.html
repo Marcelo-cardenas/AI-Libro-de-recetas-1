@@ -1,0 +1,178 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Vegana</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-content class="ion-padding">
+  <h1 class="recipe-title"> Batido de Frutas Veganas</h1>
+  <ion-img src="https://www.recetas-veganas.com/base/stock/Recipe/132-image/132-image_web.jpg.webp" class="recipe-image"></ion-img>
+  
+  <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+  <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+
+  <ion-card *ngIf="showRecipe" id="recipe-card">
+    <ion-card-content>
+      <h2>Receta</h2>
+      <!-- Texto de la receta -->
+      <ul>
+        <li>1 plátano maduro</li>
+        <li>1 taza de fresas congeladas</li>
+        <li>1/2 taza de espinacas frescas</li>
+        <li>1 taza de leche de almendras (o cualquier leche vegetal)</li>
+        <li>1 cucharada de mantequilla de almendras</li>
+        <li>1 cucharadita de semillas de chía (opcional)</li>
+        <li>Hielo (opcional)</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="showPreparation" id="preparation-card">
+    <ion-card-content>
+      <h2>Preparación</h2>
+      <!-- Texto de la preparación -->
+      <ol>
+        <li>Pelar el plátano y cortarlo en trozos.</li>
+        <li>En una licuadora, agregar el plátano, las fresas congeladas, las espinacas, la leche de almendras y la mantequilla de almendras.</li>
+        <li>Si lo deseas, añadir las semillas de chía y un poco de hielo para espesar el batido.</li>
+        <li>Mezclar todo a alta velocidad hasta que obtengas una mezcla suave y homogénea.</li>
+        <li>Verter en un vaso y disfrutar de este delicioso batido vegano lleno de nutrientes.</li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<ion-content class="ion-padding">
+  <h1 class="recipe-title"> Ensalada de Quinoa y Vegetales</h1>
+  <ion-img src="https://carolisterchefandgardener.com/wp-content/uploads/2021/03/IMG_025605-1-scaled.jpg" class="recipe-image"></ion-img>
+  
+  <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+  <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+
+  <ion-card *ngIf="showRecipe" id="recipe-card">
+    <ion-card-content>
+      <h2>Receta</h2>
+      <!-- Texto de la receta -->
+      <ul>
+        <li>1 taza de quinoa cocida</li>
+        <li>1 taza de tomates cherry, cortados por la mitad</li>
+        <li>1 pepino, pelado y cortado en cubos</li>
+        <li>1 pimiento rojo cortado en tiras</li>
+        <li>1/2 cebolla roja, finamente picada</li>
+        <li>1/4 taza de hojas de menta fresca, picadas</li>
+        <li>Jugo de 1 limón</li>
+        <li>Aceite de oliva</li>
+        <li>Sal y pimienta al gusto</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="showPreparation" id="preparation-card">
+    <ion-card-content>
+      <h2>Preparación</h2>
+      <!-- Texto de la preparación -->
+      <ol>
+        <li>En un tazón grande, combina la quinoa cocida, los tomates cherry, el pepino, el pimiento rojo y la cebolla roja.</li>
+        <li>En un tazón pequeño, mezcla el jugo de limón, aceite de oliva, sal y pimienta para hacer el aderezo.</li>
+        <li>Vierte el aderezo sobre la ensalada y mezcla bien.</li>
+        <li>Agrega las hojas de menta picadas y mezcla nuevamente.</li>
+        <li>Sirve la ensalada fría como plato principal o acompañamiento.</li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+<ion-content class="ion-padding">
+  <h1 class="recipe-title"> Curry de Garbanzos</h1>
+  <ion-img src="https://www.gourmet.cl/wp-content/uploads/2022/08/curry-de-garbanzos-ajustada-web-570x458.jpg" class="recipe-image"></ion-img>
+  
+  <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+  <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+
+  <ion-card *ngIf="showRecipe" id="recipe-card">
+    <ion-card-content>
+      <h2>Receta</h2>
+      <!-- Texto de la receta -->
+      <ul>
+        <li>2 latas de garbanzos cocidos, escurridos y enjuagados</li>
+        <li>1 cebolla picada</li>
+        <li>3 dientes de ajo, picados</li>
+        <li>1 pimiento rojo cortado en tiras</li>
+        <li>1 zanahoria cortada en rodajas</li>
+        <li>1 lata de leche de coco</li>
+        <li>2 cucharadas de pasta de curry</li>
+        <li>1 cucharadita de cúrcuma en polvo</li>
+        <li>1 cucharadita de comino en polvo</li>
+        <li>sal y pimienta al gusto</li>
+        <li>Fresco de cilantro, picado (opcional)</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="showPreparation" id="preparation-card">
+    <ion-card-content>
+      <h2>Preparación</h2>
+      <!-- Texto de la preparación -->
+      <ol>
+        <li>En una sartén grande, saltea la cebolla y el ajo hasta que estén dorados.</li>
+        <li>Agrega el pimiento rojo y saltea por unos minutos.</li>
+        <li>Añade las lentejas cocidas y las especias (comino, paprika y pimienta roja si deseas un toque picante).</li>
+        <li>Cocina por unos minutos hasta que todo esté bien combinado y caliente.</li>
+        <li>Calienta las tortillas y rellénalas con la mezcla de lentejas, lechuga y salsa de aguacate.</li>
+        <li>Sirve los tacos con salsa de tomate y disfruta.</li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+
+<ion-content class="ion-padding">
+  <h1 class="recipe-title"> Tacos de lentejas</h1>
+  <ion-img src="https://editorialtelevisa.brightspotcdn.com/wp-content/uploads/2019/11/lentejas-como-cocinarlas.jpg" class="recipe-image"></ion-img>
+  
+  <ion-button expand="full" color="primary" (click)="toggleRecipe()">Receta</ion-button>
+  <ion-button expand="full" color="secondary" (click)="togglePreparation()">Preparación</ion-button>
+
+  <ion-card *ngIf="showRecipe" id="recipe-card">
+    <ion-card-content>
+      <h2>Receta</h2>
+      <!-- Texto de la receta -->
+      <ul>
+        <li>tortillas de maiz o harina</li>
+        <li>1 taza de lentejas cocidas</li>
+        <li>1 cebolla picada</li>
+        <li>2 dientes de ajo, picados</li>
+        <li>1 pimiento rojo cortado en tiras</li>
+        <li>1 cucharadita de comino en polvo</li>
+        <li>1 cucharadita de paprika</li>
+        <li>1/2 cucharadita de pimienta roja (opcional)</li>
+        <li>lechuga picada</li>
+        <li>Salsa de aguacate (guacamole)</li>
+        <li>salsa de tomate</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="showPreparation" id="preparation-card">
+    <ion-card-content>
+      <h2>Preparación</h2>
+      <!-- Texto de la preparación -->
+      <ol>
+        <li>En una olla grande, saltea la cebolla y el ajo hasta que estén dorados.</li>
+        <li>Agrega el pimiento rojo y la zanahoria, y saltea por unos minutos.</li>
+        <li>Agrega la pasta de curry, la cúrcuma y el comino en polvo. Cocina por un minuto para que las especias se mezclen.</li>
+        <li>Agrega los garbanzos y revuelve para cubrirlos con las especias.</li>
+        <li>Vierte la leche de coco y cocina a fuego medio durante unos 10-15 minutos.</li>
+        <li>Ajusta el sabor con sal.</li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
